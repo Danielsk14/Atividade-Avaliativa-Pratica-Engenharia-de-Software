@@ -139,7 +139,7 @@ Justificativa: Embora a ação principal (bloquear) já esteja garantida pelo ha
 
 
 
-
+Minha reflexão: De acordo com as historias de usuário, os principais pontos são realmente, Proteção, Usabilidade (que não seja algo, irritante de usar no dia a dia,..., funcional e sem travamentos), e métodos para que outra pessoas de confiança possam utilizar o veiculo, como familiares ou manobristas, mecânicos e afins...
 
 
 
