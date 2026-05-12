@@ -142,5 +142,23 @@ Justificativa: Embora a ação principal (bloquear) já esteja garantida pelo ha
 Minha reflexão: De acordo com as historias de usuário, os principais pontos são realmente, Proteção, Usabilidade (que não seja algo, irritante de usar no dia a dia,..., funcional e sem travamentos), e métodos para que outra pessoas de confiança possam utilizar o veiculo, como familiares ou manobristas, mecânicos e afins...
 
 
+História 2 (Sensor de Proximidade / Anti-Roubo em Movimento)
+Ambiguidades nos critérios de aceitação: O termo "corte de combustível progressivo" é vago. É necessário definir exatamente em quanto tempo ou distância esse corte total ocorrerá para garantir a segurança no trânsito. A condição de "mais de 10 metros" também é complexa na prática, pois o sinal Bluetooth flutua conforme barreiras físicas. Além disso, falta especificar por quanto tempo a buzina e as luzes ficarão acionadas.
 
+Conflitos potenciais: Existe um forte conflito potencial com a História 3 (Modo Manobrista). Se o manobrista se afastar com o veículo, a História 2 dita que o carro será bloqueado pela falta de proximidade do celular do dono. O critério de aceitação do Modo Manobrista precisa explicitamente suspender a regra do Sensor de Proximidade enquanto estiver ativo.
+
+Informações a serem elucidadas com o usuário: Precisamos perguntar ao usuário: "O que deve acontecer se a bateria do seu celular acabar enquanto você está dirigindo na rodovia? O sistema interpretará como distanciamento e desligará o carro em movimento?" Isso exigirá a criação de um critério de tolerância ou validação secundária (como um PIN no painel).
+
+História de Usuário Escolhida 2: História 4 (Autenticação Offline)
+
+História de Usuário Escolhida 2: História 4 (Autenticação Offline)
+
+Ambiguidades nos critérios de aceitação: A frase "assim que o celular recuperar a conexão com a internet" é uma condição subentendida que pode falhar se o usuário fechar o aplicativo no modo multitarefa do celular. Falta definir uma rotina de background obrigatória. O termo "conexão local segura" também não especifica requisitos mínimos de protocolo (ex: Bluetooth Low Energy 5.0).
+
+Conflitos potenciais: Pode haver conflito arquitetural com a História 5 (Notificação de Tentativa de Furto). Se o sistema veicular depende primariamente do celular do usuário para sincronizar dados e o usuário está longe/offline, como o carro enviará a notificação de furto em "no máximo 5 segundos"? Isso revela que o módulo do carro precisará de conexão própria (chip GSM/IoT), separada do celular.
+
+Informações a serem elucidadas com o usuário: É necessário validar a infraestrutura: "Você está disposto a pagar uma pequena mensalidade por um chip de dados (M2M/IoT) instalado no carro para garantir que ele se comunique independentemente do seu celular?"
+
+
+Revisão crítica: Na verdade eu acredito que todas elas, são super importantes para o projeto e não excluiria nenhuma, se possível.
 
