@@ -38,8 +38,6 @@ E claro, deve ser feito um orçamento sobre o custo do projeto e possiveis retor
 **Padrão 1: State**
 **Categoria: Comportamental.**
 
-
-
 [ModuloVeicular] 
         | (Contexto)
         v
@@ -70,3 +68,4 @@ Categoria: Comportamental.**
 
 
 **Revisão Critica:**
+O metodo State, pode vir a apresentar um crescimento excessivo, caso forem adicionados varios modos aosoftware, por exemplo, modo pessoa de confiança, modo corrida, onde a pessoa para o veiculo e vai se distancia dele, nesse caso ele não deve disparar achando que é roubo (tambem para situações parecidas), tambem um método para quando o aparelho estiver com bateria fraca, o que podemos fazer?? muitas coisas ainda devem ser estudadas e testadas para o software.
